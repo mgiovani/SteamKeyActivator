@@ -6,10 +6,11 @@ function ativarKeys() {
       document.getElementById('accept_ssa').checked = 1;
       document.getElementById('product_key').value = a[i]; 
       RegisterProductKey();
+      console.log(document.getElementById('error_display').innerHTML);
       i++;                     
-      if (i < 50) {            
+      if (i < a.length) {            
          ativarKeys();             
       }                       
-   }, 3500)
+      }, 3500)
 }
-ativarKeys(); 
+ativarKeys();
